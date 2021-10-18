@@ -27,8 +27,6 @@ class TestCookie(unittest.TestCase):
             [('4sMM2LxV07bPJzwf', 2), ('5sfM2LxV07bPJzwf', 1)]), ['4sMM2LxV07bPJzwf'])
         self.assertEqual(most_active_cookie(
             [('AtY0laUfhglK3lC7', 2), ('SAZuXPGUrfbcn5UA', 2), ('5UAVanZf6UtGyKVS', 1)]), ['AtY0laUfhglK3lC7', 'SAZuXPGUrfbcn5UA'])
-
-        with self.assertRaises(IndexError):
-            most_active_cookie([])
+        self.assertEqual(most_active_cookie([]), [])
 
 
