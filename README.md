@@ -65,10 +65,35 @@ Please use a programming language you’re very comfortable with. The next stage
 ./run.sh
 ```
 
+#### Output
+
+```text
+Most Active Cookies on date 2018-12-09:
+AtY0laUfhglK3lC7
+Most Active Cookies on date 2018-12-08:
+SAZuXPGUrfbcn5UA
+4sMM2LxV07bPJzwf
+fbcn5UAVanZf6UtG
+Most Active Cookies on date 2018-12-07:
+4sMM2LxV07bPJzwf
+Most Active Cookies on date 2018-12-06:
+
+```
+
 ### Test
 
 ```bash
 ./test.sh
+```
+
+#### Output
+
+```text
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.003s
+
+OK
 ```
 
 ## Logic
