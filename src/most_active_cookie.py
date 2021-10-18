@@ -42,9 +42,8 @@ def most_active_cookie(cookie_count):
                 break
 
             most_active_cookies.append(cookie)
-    except IndexError as e:
+    except IndexError:
         logging.exception('error no cookie found on given date')
-        raise e
 
     return most_active_cookies
 
@@ -58,5 +57,5 @@ if __name__ == '__main__':
 
     cookie_count = find_cookie_count(args.logfile, args.date)
     result = most_active_cookie(cookie_count)
+    print(f'Most Active Cookies on date {str(args.date)}:')
     print('\n'.join(map(str, result)))
-    print('\n')
